@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="4.79" tests="3" errors="0" skipped="2" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shanojthekkan/Documents/workspace/Test_proj"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shanojthekkan/Documents/workspace/Test_proj"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/rj/5jr5sdts7t5b94fzx2bfqy100000gp/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shanojthekkan/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2680652024339362819.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shanojthekkan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shanojthekkan"/>
+    <property name="user.timezone" value="Australia/Melbourne"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shanojthekkan"/>
+    <property name="java.class.path" value="/Users/shanojthekkan/Desktop/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="/Users/shanojthekkan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shanojthekkan/Documents/workspace/Test_proj/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="setup" classname="com.testing.proj.Test_proj.AppTest" time="4.79">
+    <failure message="An unknown server-side error occurred while processing the command. Original error: Could not find adb Please set the ANDROID_HOME environment variable with the Android SDK root directory path. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 347 milliseconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;OM383s-MBP&apos;, ip: &apos;10.0.0.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find adb Please set the ANDROID_HOME environment variable with the Android SDK root directory path. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 347 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'OM383s-MBP', ip: '10.0.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.android.AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
+	at com.testing.proj.Test_proj.AppTest.setup(AppTest.java:59)
+]]></failure>
+    <system-out><![CDATA[Checking If Appium Server is stopped ?
+Appium Server is already Stopped !!
+Starting Appium Server ......
+[Appium] Welcome to Appium v1.6.4-beta
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.6.4-beta","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 26 ms - 88 
+Appium Server Started !!
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"app":"/Users/shanojthekkan/Documents/workspace/Test_proj/resources/Officeworks.apk","appPackage":"au.com.officeworks.mobile","appActivity":"au.com.officeworks.mobile.ui.main.SplashScreenActivity","noReset":true,"automationName":"UIAutomator2","platformName":"Android","deviceName":"0715f7fcee8c1e04"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"/Users/shanojthekkan/Documents/workspace/Test_proj/resources/Officeworks.apk","appPackage":"au.com.officeworks.mobile","appActivity":"au.com.officeworks.mobile.ui.main.SplashScreenActivity","noReset":true,"automationName":"UIAutomator2","platformName":"Android","deviceName":"0715f7fcee8c1e04"},null,null,null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1494852463925 (22:47:43 GMT+1000 (AEST))
+[Appium] Creating new AndroidUiautomator2Driver (v0.2.13) session
+[Appium] Capabilities:
+[Appium]   app: '/Users/shanojthekkan/Documents/workspace/Test_proj/resources/Officeworks.apk'
+[Appium]   appPackage: 'au.com.officeworks.mobile'
+[Appium]   appActivity: 'au.com.officeworks.mobile.ui.main.SplashScreenActivity'
+[Appium]   noReset: true
+[Appium]   automationName: 'UIAutomator2'
+[Appium]   platformName: 'Android'
+[Appium]   deviceName: '0715f7fcee8c1e04'
+[BaseDriver] Session created with session id: 8c7d5905-8d49-4d20-9fc6-c9499c681d79
+[BaseDriver] Using local app '/Users/shanojthekkan/Documents/workspace/Test_proj/resources/Officeworks.apk'
+[debug] [UiAutomator2] Checking whether app is actually present
+[UiAutomator2] UIAutomator2 Driver version:0.2.13
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_101
+[ADB] Checking whether adb is present
+[ADB] The ANDROID_HOME environment variable is not set to the Android SDK root directory path. ANDROID_HOME is required for compatibility with SDK 23+. Checking along PATH for adb.
+[ADB] Error: Could not find adb Please set the ANDROID_HOME environment variable with the Android SDK root directory path.
+    at Object.wrappedLogger.errorAndThrow (../../lib/logging.js:60:13)
+    at ADB.callee$0$0$ (../../../lib/tools/system-calls.js:86:9)
+    at tryCatch (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:136:37)
+    at run (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/core-js/library/modules/es6.promise.js:108:47)
+    at /Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/core-js/library/modules/es6.promise.js:119:28
+    at flush (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/core-js/library/modules/$.microtask.js:19:5)
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)
+ [Error: Could not find adb Please set the ANDROID_HOME environment variable with the Android SDK root directory path.]
+[debug] [UiAutomator2] Deleting UiAutomator2 session
+[UiAutomator2] Unable to remove port forward 'Cannot read property 'removePortForward' of undefined'
+[MJSONWP] Encountered internal error running command: Error: Could not find adb Please set the ANDROID_HOME environment variable with the Android SDK root directory path.
+    at Object.wrappedLogger.errorAndThrow (../../lib/logging.js:60:13)
+    at ADB.callee$0$0$ (../../../lib/tools/system-calls.js:86:9)
+    at tryCatch (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as throw] (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:100:21)
+    at GeneratorFunctionPrototype.invoke (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/babel-runtime/regenerator/runtime.js:136:37)
+    at run (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/core-js/library/modules/es6.promise.js:108:47)
+    at /Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/core-js/library/modules/es6.promise.js:119:28
+    at flush (/Applications/Appium.app/Contents/Resources/app/node_modules/appium-adb/node_modules/core-js/library/modules/$.microtask.js:19:5)
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)
+[HTTP] <-- POST /wd/hub/session 500 176 ms - 246 
+]]></system-out>
+  </testcase>
+  <testcase name="testsample" classname="com.testing.proj.Test_proj.AppTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="teardown" classname="com.testing.proj.Test_proj.AppTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

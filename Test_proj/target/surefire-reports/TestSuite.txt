@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 4.89 sec <<< FAILURE!
+setup(com.testing.proj.Test_proj.AppTest)  Time elapsed: 4.79 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find adb Please set the ANDROID_HOME environment variable with the Android SDK root directory path. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 347 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'OM383s-MBP', ip: '10.0.0.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.android.AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
+	at com.testing.proj.Test_proj.AppTest.setup(AppTest.java:59)
+
