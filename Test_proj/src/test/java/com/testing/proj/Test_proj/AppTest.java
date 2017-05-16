@@ -46,8 +46,7 @@ public class AppTest
 		
 		Runtime.getRuntime().exec("/bin/bash export ANDROID_HOME=/Users/shanojthekkan/Library/Android/sdk/");
 		
-		CommandLine command = new CommandLine("/bin/sh");
-		command.addArgument("/usr/local/bin/node");
+		CommandLine command = new CommandLine("/usr/local/bin/node");
 		command.addArgument("/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js", false);
 		command.addArgument("--address", false);
 		command.addArgument("0.0.0.0");
