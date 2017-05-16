@@ -3,8 +3,13 @@ package com.testing.proj.Test_proj;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.exec.CommandLine;
+import org.apache.commons.exec.DefaultExecuteResultHandler;
+import org.apache.commons.exec.DefaultExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
@@ -30,16 +35,33 @@ public class AppTest
 	public static By findIcon 	= By.xpath("//*[@class='android.support.v7.app.ActionBar$Tab'][1]");
 	public static AppiumDriver driver = null;
 	 //   public static AppiumServiceBuilder service;
-	  
+	
+	
 	    public static AppiumDriverLocalService service=null;
 	    public static String AppiumNodeFilePath ="/usr/local/bin/node";
 	    public static String AppiumJavaScriptServerFile = "/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js";
 	@BeforeTest
 	 //   public static void setup(String pVer, String pName, String appLocation, String dName)
 	    public static void setup() throws IOException {
+		
+		//Runtime.getRuntime().exec("/bin/bash export ANDROID_HOME=/Users/shanojthekkan/Library/Android/sdk/");
+		
+		CommandLine command = new CommandLine("/usr/local/bin/node");
+		command.addArgument("/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js", false);
+		command.addArgument("--address", false);
+		command.addArgument("0.0.0.0");
+		command.addArgument("--port", false);
+		command.addArgument("4723");
+		command.addArgument("--no-reset", true);
+		DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
+		DefaultExecutor executor = new DefaultExecutor();
+		executor.setExitValue(1);
+		executor.execute(command, resultHandler);
+		
+		
 
-	 	   stopAppiumServer();
-	      startAppiumServer();
+	 	//   stopAppiumServer();
+	    //  startAppiumServer();
 	    	
 	    		File appDir = new File("resources");
 	    		File app = new File(appDir, "Officeworks.apk");
@@ -65,6 +87,8 @@ public class AppTest
  	public static void startAppiumServer() throws IOException {
 
   		System.out.println("Starting Appium Server ......");
+  		
+
 
   		service =  AppiumDriverLocalService.buildService(new AppiumServiceBuilder().usingDriverExecutable(new File(AppiumNodeFilePath)).withAppiumJS(
   				new File(AppiumJavaScriptServerFile)));
@@ -103,6 +127,6 @@ public class AppTest
     @AfterTest
     public static void teardown() throws IOException {
         driver.quit();
-        stopAppiumServer();
+       // stopAppiumServer();
     }
 }
