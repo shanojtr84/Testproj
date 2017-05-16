@@ -44,7 +44,7 @@ public class AppTest
 	 //   public static void setup(String pVer, String pName, String appLocation, String dName)
 	    public static void setup() throws IOException {
 		
-		//Runtime.getRuntime().exec("/bin/bash export ANDROID_HOME=/Users/shanojthekkan/Library/Android/sdk/");
+		Runtime.getRuntime().exec("/bin/bash export ANDROID_HOME=/Users/shanojthekkan/Library/Android/sdk/");
 		
 		CommandLine command = new CommandLine("/usr/local/bin/node");
 		command.addArgument("/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js", false);
