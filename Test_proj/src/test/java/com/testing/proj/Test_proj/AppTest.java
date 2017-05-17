@@ -91,6 +91,7 @@ public class AppTest
   		 Map<String, String> env = new HashMap<String, String>();
   		env.put("ANDROID_HOME","/Users/shanojthekkan/Library/Android/sdk");
   		env.put("JAVA_HOME","/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home");
+  		
 
   		service =  AppiumDriverLocalService.buildService(new AppiumServiceBuilder().usingDriverExecutable(new File(AppiumNodeFilePath)).withAppiumJS(
   				new File(AppiumJavaScriptServerFile)).withEnvironment(env));
@@ -129,6 +130,6 @@ public class AppTest
     @AfterTest
     public static void teardown() throws IOException {
         driver.quit();
-       // stopAppiumServer();
+       stopAppiumServer();
     }
 }
