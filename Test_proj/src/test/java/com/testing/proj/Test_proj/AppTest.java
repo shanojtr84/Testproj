@@ -44,7 +44,7 @@ public class AppTest
 	 //   public static void setup(String pVer, String pName, String appLocation, String dName)
 	    public static void setup() throws IOException {
 		
-		Runtime.getRuntime().exec("/bin/bash export ANDROID_HOME=/Users/shanojthekkan/Library/Android/sdk/");
+		/*Runtime.getRuntime().exec("/bin/bash export ANDROID_HOME=/Users/shanojthekkan/Library/Android/sdk/");
 		
 		CommandLine command = new CommandLine("/usr/local/bin/node");
 		command.addArgument("/Applications/Appium.app/Contents/Resources/app/node_modules/appium/build/lib/main.js", false);
@@ -58,10 +58,10 @@ public class AppTest
 		executor.setExitValue(1);
 		executor.execute(command, resultHandler);
 		
-		
+		*/
 
-	 	//   stopAppiumServer();
-	    //  startAppiumServer();
+	 	    stopAppiumServer();
+	        startAppiumServer();
 	    	
 	    		File appDir = new File("resources");
 	    		File app = new File(appDir, "Officeworks.apk");
@@ -88,10 +88,12 @@ public class AppTest
 
   		System.out.println("Starting Appium Server ......");
   		
-
+  		 Map<String, String> env = new HashMap<String, String>();
+  		env.put("ANDROID_HOME","/Users/shanojthekkan/Library/Android/sdk");
+  		env.put("JAVA_HOME","/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home");
 
   		service =  AppiumDriverLocalService.buildService(new AppiumServiceBuilder().usingDriverExecutable(new File(AppiumNodeFilePath)).withAppiumJS(
-  				new File(AppiumJavaScriptServerFile)));
+  				new File(AppiumJavaScriptServerFile)).withEnvironment(env));
   		
   		service.start();
 
